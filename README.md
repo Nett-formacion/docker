@@ -1,4 +1,4 @@
-# Ejemplos de construccion de imágenes y contenedores
+# Ejemplos de construcción de imágenes y contenedores
 
 Este Proyecto contiene pequeños ejemplos de construcciones de **contenedores e imágenes** usados como apoyo para la sesión explicativa de docker
 
