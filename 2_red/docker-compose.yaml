@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  equipo1:
+    build: .
+    hostname: "equipo1"
+  equipo2:
+    build: .
+    hostname: "equipo2"

@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  bash:
+    image: ubuntu:latest
+    container_name: container_bash
+    command:
+      - /bin/bash
+    tty: true
+    stdin_open: true

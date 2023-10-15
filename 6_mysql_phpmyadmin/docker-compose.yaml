@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql
+    container_name: mysql
+    volumes:
+      - ".\mysql:/var/lib/mysql"
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_USER=manuel
+      - MYSQL_PASSWORD=manuel
+      - MYSQL_DATABASE=roles
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - 8800:80
+    depends_on:
+      - mysql
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=mysql
